@@ -14,7 +14,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: ["https://flipkart-front.vercel.app"],
     credentials: true
 }));
 app.use(express.json());
